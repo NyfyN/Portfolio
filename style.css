@@ -87,6 +87,8 @@
     min-height: 100vh;
     padding: 0 5vw;
     gap: 40px;
+    padding-top: 80px;
+
   }
 
   .normal {
@@ -115,6 +117,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: float 2s ease-in infinite;
+    cursor: pointer;
   }
 
   .scroll-down {
@@ -236,6 +240,10 @@
     transform: translateY(300px);
   }
 
+  .card:hover {
+    background: #363a4e;
+  }
+
   .section-header {
     width: 100%;
     color: white;
@@ -245,7 +253,6 @@
 
   /* SECTION ABOUT ME END */
   /* SECTION PROJECTS START */
-
 
   .project {
     display: flex;
@@ -375,61 +382,18 @@
     .hero-wrapper {
       flex-direction: column;
       text-align: center;
-      gap: 20px;
     }
 
-    .name {
-      font-size: 12vw;
-    }
-
-    .normal,
-    .description {
-      font-size: 4vw;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 1024px) {
     .card {
       width: 80%;
     }
 
-    .title {
-      font-size: 6rem;
-    }
-
-    .level {
-      font-size: 3rem;
-    }
-
-    .skills {
-      font-size: 1.8rem;
-    }
-  }
-
-  @media (max-width: 1024px) {
     .project {
       flex-direction: column;
-      text-align: center;
     }
 
-    .project-text {
-      font-size: 2rem;
-    }
-
-    .project-title {
-      font-size: 3rem;
-    }
-  }
-
-  @media (max-width: 1024px) {
     .form-wrapper {
       width: 90vw;
-      font-size: 2.5rem;
-    }
-
-    button {
-      font-size: 2rem;
     }
   }
 
