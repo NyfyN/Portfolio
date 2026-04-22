@@ -56,17 +56,25 @@
   body {
     background-color: #2D3142;
     height: 1500px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-in-out forwards;
   }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 
   #home {
     position: relative;
     min-height: 100vh;
   }
 
-  .hero {
-    flex: 1;
-  }
-
+  .hero,
   .hero-img {
     flex: 1;
   }
@@ -93,19 +101,35 @@
 
   .normal {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 10vh;
+    font-size: 6vh;
   }
 
   .name {
     color: white;
-    font-size: 20vh;
+    font-size: 10vh;
   }
 
   .description {
     color: rgba(255, 255, 255, 0.7);
     max-width: 600px;
     text-align: justify;
-    font-size: 10vh;
+    font-size: 6vh;
+  }
+
+  .socials {
+    padding: 50px;
+  }
+
+  .socials>a {
+    color: white;
+    font-size: 6rem;
+    text-decoration: none;
+  }
+
+  .socials>a:hover {
+    color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
   }
 
   .arrow {
